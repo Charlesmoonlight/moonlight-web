@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        header, .product-container, .hero-section{
+            padding: 0px 100px;
+        }
+        header, ul, .link-container{
+            padding: 10px 100px;
+            display: flex;
+            align-items: center;
+        }
+        header{
+            justify-content: space-between;
+            font-size: 22px;
+        }
+        .link-container{
+            width: 40%;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .button{
+            background-color: aqua;
+            border: 2px solid ;
+            border-radius: 10px;
+            padding: 5px 20px;
+            cursor: pointer;
+        }
+        .hero-section{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 50px;
+        }
+        .hero-text{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            align-items: flex-start;
+        }
+        .hero-section h2{
+            font-size: 45px;
+            margin-bottom: -5px;
+        }
+        .hero-section p{
+            font-size: 20px;
+        }
+        .hero-image{
+            width: 60%;
+        }
+        .hero-image img{
+            width: 100%;
+            height: 450px;
+            border-radius: 30px;
+        }
+      .product-container{ 
+          background-color: hsl(0, 0%, 75%);
+          text-align: center; 
+          margin-top: 50px;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        .product-container h1{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .product-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        .product-item h2{
+            font-size: 50px;
+            color: rgb(255, 0, 255);
+        }
+        .product-img{
+            width: 100%;
+        }
+        .product-img > img{
+            width: 40%;
+            height: 450px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        footer{ 
+            padding: 10px 100px;
+            background-color:hsl(260, 8%, 14%);
+            color: white;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: grid;
+            grid-template-columns: 1.5fr repeat(3, 1fr);
+        }
+        .info-section > div > div {
+            display: flex;
+            align-items: center;
+        }
+        .info-section > div > div img{
+            margin-right: 15px;
+        }
+        a:hover{
+            color: rgb(226, 123, 166);
+        }
+        .footer-item h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .footer-item p { 
+            font-family: serif; 
+            font-size: 20px;
+        }
+        .company-info p{ 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+           <img src="PRINTABLE 4x3inch.jpg" alt="" height="50" width="80"> 
+        </div>
+        <div class="link-container">
+            <a href="./signUp.html">Log in</a>
+            <a href="./login.html">Sign up</a>
+            <button class="button">Subscribe</button> 
+        </div>
+    </header>  
+    <div class="hero-section">
+        <div class="hero-text">
+            <h2>Your Design Solutions</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum ex cum voluptatibus placeat, cupiditate nihil, tempora quidem autem necessitatibus, nobis impedit nam quam voluptate consequuntur mollitia culpa similique sequi repellendus!</p>
+            <button class="button">Sign up</button>
+        </div>
+        <div class="hero-image">
+           <img src="./images/PROJECT.jpg" alt="">
+        </div>
+    </div>
+    <div class="product-container">
+        <h1> Products</h1>
+        <div class="product-item">
+            <h2>Polo Designs</h2>
+            <div class="product-img">
+                <img src="ts1.jpg" alt="">
+                <img src="ts2.jpg" alt="">
+            </div>
+        </div>
+        <div class="product-item">
+            <h2>Book Publication</h2>
+            <div class="product-img">
+                <img src="book.jpg" alt="">
+                <img src="poster.jpg" alt="">
+            </div>
+        </div>
+        <div class="product-item">
+            <h2>Card Printings</h2>
+            <div class="product-img">
+                <img src="ca3.jpg" alt="">
+                <img src="ca3.jpg" alt="">
+            </div>
+        </div>
+        <div class="product-item">
+            <h2>Flex Printings</h2>
+            <div class="product-img">
+                <img src="FB_IMG_15999177240289694.jpg" alt="">
+                <img src="j2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="info-section">
+            <img src="PRINTABLE 4x3inch.jpg" height="50" width="80">
+            <div class="company-info">
+                <div>
+                    <img src="icon-location.svg" alt="">
+                    <p>University Of Nigeria, Nsukka.</p>
+                </div>
+                <div>
+                    <img src="icon-phone.svg" alt="">
+                    <p>+2347032262357</p>
+                </div>
+                <div>
+                    <img src="icon-email.svg" alt="">
+                    <p>moonlightdesigns@gmail.com</p>
+                </div>
+            </div> 
+        </div>
+        <div class="footer-item">
+            <h2>Our Product</h2>
+            <div>
+                <p>Card Printings</p>
+                <p>Polo Customization</p>
+                <p>Graphic Designs</p>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h2>Resources</h2>
+            <div>
+                <p>Blog</p>
+                <p>Support</p>
+                <p>FAQ</p>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h2>Company</h2>
+            <div>
+                <p>About Us</p>
+                <p>Our Team</p>
+                <p>Career</p> 
+        </div>
+    </footer>
+</body>
+</html>
